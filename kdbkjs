@@ -1,0 +1,60 @@
+[1mdiff --git a/client/main.html b/client/main.html[m
+[1mindex 198a2ea..a9be50b 100644[m
+[1m--- a/client/main.html[m
+[1m+++ b/client/main.html[m
+[36m@@ -5,7 +5,7 @@[m
+   <div class="container">[m
+     <header class="navbar navbar-default" role="navigation">[m
+       <div class="navbar-header">[m
+[31m-        <a class="navbar-brand" href="/">Microscope</a>[m
+[32m+[m[32m        <a class="navbar-brand" href="/">Sources</a>[m
+       </div>[m
+     </header>[m
+     <div id="main">[m
+[1mdiff --git a/server/fixtures.js b/server/fixtures.js[m
+[1mindex e43f349..367ace9 100644[m
+[1m--- a/server/fixtures.js[m
+[1m+++ b/server/fixtures.js[m
+[36m@@ -1,16 +1,16 @@[m
+ if(Posts.find().count() == 0) {[m
+   Posts.insert({[m
+[31m-    title: 'Title 1',[m
+[31m-    url: 'http://sachagreif.com/introducing-telescope/'[m
+[32m+[m[32m    title: 'Source 1',[m
+[32m+[m[32m    url: 'http://wikipedia.org/'[m
+   });[m
+ [m
+   Posts.insert({[m
+[31m-    title: 'Title 2',[m
+[32m+[m[32m    title: 'Source 2',[m
+     url: 'http://meteor.com/'[m
+   });[m
+   [m
+   Posts.insert({[m
+[31m-    title: 'Title 3',[m
+[31m-    url: 'http://themeteorbook.com'[m
+[32m+[m[32m    title: 'Source 3',[m
+[32m+[m[32m    url: 'http://w3schools.com'[m
+   });    [m
+ }[m
+[1mdiff --git a/server/fixtures.js~ b/server/fixtures.js~[m
+[1mindex e69de29..da94002 100644[m
+[1m--- a/server/fixtures.js~[m
+[1m+++ b/server/fixtures.js~[m
+[36m@@ -0,0 +1,16 @@[m
+[32m+[m[32mif(Posts.find().count() == 0) {[m
+[32m+[m[32m  Posts.insert({[m
+[32m+[m[32m    title: 'Source 1',[m
+[32m+[m[32m    url: 'http://wikipedia.org/'[m
+[32m+[m[32m  });[m
+[32m+[m
+[32m+[m[32m  Posts.insert({[m
+[32m+[m[32m    title: 'Source 2',[m
+[32m+[m[32m    url: 'http://meteor.com/'[m
+[32m+[m[32m  });[m
+[32m+[m[41m  [m
+[32m+[m[32m  Posts.insert({[m
+[32m+[m[32m    title: 'Source 3',[m
+[32m+[m[32m    url: 'http://themeteorbook.com'[m
+[32m+[m[32m  });[m[41m    [m
+[32m+[m[32m}[m

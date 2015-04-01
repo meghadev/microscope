@@ -1,16 +1,16 @@
 if(Posts.find().count() == 0) {
   Posts.insert({
-    title: 'Title 1',
-    url: 'http://sachagreif.com/introducing-telescope/'
+    title: 'Source 1',
+    url: 'http://wikipedia.org/'
   });
 
   Posts.insert({
-    title: 'Title 2',
+    title: 'Source 2',
     url: 'http://meteor.com/'
   });
   
   Posts.insert({
-    title: 'Title 3',
-    url: 'http://themeteorbook.com'
+    title: 'Source 3',
+    url: 'http://w3schools.com'
   });    
 }
